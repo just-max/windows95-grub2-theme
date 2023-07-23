@@ -1,7 +1,4 @@
-
-title-text: "Starting Windows 95..."
-title-font: "Less Perfect DOS VGA Regular 16"
-title-color: "white"
+title-text: ""
 
 desktop-image: "desktop.png"
 desktop-image-scale-method: "crop"
@@ -10,7 +7,30 @@ desktop-image-scale-method: "crop"
 terminal-font: "Less Perfect DOS VGA Regular 16"
 # terminal-style: ""
 
-# W95FA Bold 24
++ vbox {
+  + label { text = "Starting Windows 95..." font = "Less Perfect DOS VGA Regular 32" color = "white" }
+  + label { text = "" font = "Less Perfect DOS VGA Regular 32" }
+  + label { text = "Welcome to MS-DOS 7.10..." font = "Less Perfect DOS VGA Regular 32" color = "white" }
+  + label {
+    text = "Copyright Microsoft Corp. All rights reserved."
+    font = "Less Perfect DOS VGA Regular 32" color = "white" }
+  + label { text = "" font = "Less Perfect DOS VGA Regular 32" }
+  + label {
+    text = "Press E to edit or C for a command prompt."
+    font = "Less Perfect DOS VGA Regular 32" color = "white" }
+}
+
++ label {
+  id = "__timeout__"
+  top = 224
+  # width = 50% height = 10%
+  text = "Booting system in %d..."
+  color = "white"
+  # align = "left"
+  font = "Less Perfect DOS VGA Regular 32"
+}
+
+
 + hbox {
   left = 25%
   top = 35%-52
@@ -20,6 +40,7 @@ terminal-font: "Less Perfect DOS VGA Regular 16"
   + image { width = 12 file = "boot_menu/header_w.png" }
   + canvas {
     width = 100%-128 height = 52
+    # TODO: make the font and text nicer
     + label { left = 1 top = 12 text = "Choose a System" font = "W95FA Regular 24" color = "white" }
     + image { width = 100% height = 100% file = "boot_menu/header_c.png" }
   }
@@ -35,7 +56,7 @@ terminal-font: "Less Perfect DOS VGA Regular 16"
   menu_pixmap_style = "boot_menu/menu_*.png"
 
   item_font = "W95FA Regular 24"
-  item_height = 26
+  item_height = 34
   item_spacing = 0
   item_padding = 0
   # dont show icons, and remove the space they would take up
@@ -44,6 +65,13 @@ terminal-font: "Less Perfect DOS VGA Regular 16"
 
   selected_item_color = "white"
   selected_item_pixmap_style = "boot_menu/menu_item_selected_*.png"
+
+  scrollbar = true
+  scrollbar_width = 32
+  scrollbar_thumb = "boot_menu/scrollbar/thumb_*.png"
+  scrollbar_frame = "boot_menu/scrollbar/frame_*.png"
+  # cover the gutter when no scrollbar is shown
+  scrollbar_left_pad = -32
 }
 
 + hbox {
@@ -62,51 +90,3 @@ terminal-font: "Less Perfect DOS VGA Regular 16"
   + image { width = 60 file = "boot_menu/footer_item_c.png" }
   + image { width = 36 file = "boot_menu/footer_e.png" }
 }
-
-#+ progress_bar {
-#  left = 15% top = 80%
-#  width = 70% height = 50
-#
-#  font = "W95FA Regular 24"
-#  id = "__timeout__"
-#  text = "@TIMEOUT_NOTIFICATION_LONG@"
-#  text_color = "black"
-#  bar_style = "boot_menu/footer_item_*.png"
-#  highlight_style = "timer/highlight_*.png"
-#  show_text = true
-#}
-
-+ label {
-  id = "__timeout__"
-  left = 25% top = 90%
-  width = 50% height = 10%
-  text = "Auto-booting in %d second(s)..."
-  color = "white"
-  align = "center"
-  font = "Less Perfect DOS VGA Regular 16"
-}
-
-
-#+ progress_bar {
-#  left = 25%+10 top = 65%+1
-#  width = 25% height = 50
-#
-#  font = "W95FA Regular 24"
-#  id = "__timeout__"
-#  text = "@TIMEOUT_NOTIFICATION_LONG@"
-#  text_color = "black"
-#  bar_style = "boot_menu/footer_item_*.png"
-#  highlight_style = "timer/highlight_*.png"
-#  show_text = true
-#}
-
-#+ label {
-#  left = 25%+10 top = 65%+1
-#  width = 25% height = 50
-#
-#  font = "W95FA Regular 24"
-#  id = "__timeout__"
-#  text = "System selected; booting in %d second(s)"
-#  text_color = "black"
-#  show_text = true
-#}
