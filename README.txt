@@ -36,7 +36,8 @@ This project includes the W95FA font by Alina Sava:
 W95FA is licensed under the SIL Open Font License.
 
 It also uses the wonderful Less Perfect DOS VGA by Adam Moore (LÆMEUR),
-based on the work of Zeh Fernando.
+based on the work of Zeh Fernando, an emulation of the 80/25 text screen
+used on VGA monitors
 
 Less Perfect DOS VGA is "free for all use, commercial and non-commercial."
 
@@ -47,10 +48,18 @@ I am not aware of any attempts to enforce this copyright though.
 W95FA: <https://w95font.com/>
 Less Perfect DOS VGA: <https://laemeur.sdf.org/fonts/>
 
+Warning: Beware of Rabbit Holes
+
 Licence
 -------
 
 The Windows 95 GRUB2 theme itself (anything not listed under "What's Inside")
 is licensed under the Mozilla Public License, Version 2.0.
 
-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+-<*>-+
+Further Material
+----------------
+
+You can preview this theme, or any of your own tweaks, using the GRUB2 Theme
+Preview utility <https://github.com/hartwork/grub2-theme-preview>.
+
++-<*>-+<[@]>+-<*>-+-<*>-+-<*>-+-<*>-+<[@]>+-<*>-+-<*>-+-<*>-+-<*>-+<[@]>+-<*>-+
