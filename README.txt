@@ -28,7 +28,7 @@ What's Inside
 
 The Windows 95 GRUB2 theme uses a couple of other great projects.
 
-This project includes the W95FA font by Alina Sava:
+This project includes the W95FA font by Alle Sava:
 
         Re-created after the default Windows 95 font (MS Sans Serif),
         W95FA is a free Windows 95 font complete with pixel style.
