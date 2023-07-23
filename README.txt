@@ -1,5 +1,7 @@
-GRUB2 Theme: Windows 95
------------------------
+                            GRUB2 Theme: Windows 95
+
++-<*>-+<[@]>+-<*>-+-<*>-+-<*>-+-<*>-+<[@]>+-<*>-+-<*>-+-<*>-+-<*>-+<[@]>+-<*>-+
+
 The Windows 95 GRUB2 theme is a GRUB2 theme in the style of Windows 95.
 
 Installing
